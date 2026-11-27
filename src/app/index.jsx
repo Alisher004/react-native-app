@@ -3,7 +3,8 @@ import { Text, View, StyleSheet, Platform } from "react-native";
 export default function Index() {
   const name = "Asan"
   const skils = ['js', 'react', 'react-native']
-  console.log("Homescreen рендерленди", Platform.OS);
+
+  console.log("homescreen render", Platform.OS);
   
   return (
     <>
@@ -17,10 +18,9 @@ export default function Index() {
             <Text key={skill}>{skill}</Text>
           ))}
         </View> */}
-
         <Text style={styles.title}>Чойро даяр</Text>
-        <Text>OC: {Platform.OS}</Text>
-        <Text>version: {String(Platform.Version)}</Text>
+        <Text>Oc: {Platform.OS}</Text>
+        <Text>version {String(Platform.Version)}</Text>
       </View>
     </>
   );
